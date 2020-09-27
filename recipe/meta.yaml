@@ -10,7 +10,7 @@ source:
   sha256: c68042e6ac13d6e10b6f5a29edb14f02c21b339c7b33d836b4d62b2738d3a33a
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - frictionless = frictionless.__main__:program
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
