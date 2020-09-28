@@ -1,5 +1,5 @@
 {% set name = "frictionless" %}
-{% set version = "3.11.1" %}
+{% set version = "3.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c68042e6ac13d6e10b6f5a29edb14f02c21b339c7b33d836b4d62b2738d3a33a
+  sha256: 14bf2d5da5310882085524c0676492ff40fceecd665be7c853e1b5845dff13ca
 
 build:
   number: 0
   entry_points:
     - frictionless = frictionless.__main__:program
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -52,7 +52,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.md
-  summary: 'Frictionless is a framework to describe, extract, validate, and transform tabular data'
+  summary: Frictionless is a framework to describe, extract, validate, and transform tabular data
 
 extra:
   recipe-maintainers:
