@@ -14,6 +14,7 @@ build:
   entry_points:
     - frictionless = frictionless.__main__:program
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
 
 requirements:
   host:
@@ -46,6 +47,9 @@ test:
     - frictionless
   commands:
     - frictionless --help
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://github.com/frictionlessdata/frictionless-py
