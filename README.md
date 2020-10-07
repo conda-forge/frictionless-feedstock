@@ -5,11 +5,9 @@ Home: http://github.com/frictionlessdata/frictionless-py
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/frictionless-feedstock/blob/master/LICENSE.txt)
 
 Summary: Frictionless is a framework to describe, extract, validate, and transform tabular data
-
-
 
 Current build status
 ====================
