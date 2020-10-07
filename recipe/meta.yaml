@@ -1,5 +1,5 @@
 {% set name = "frictionless" %}
-{% set version = "3.17.0" %}
+{% set version = "3.18.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f853f6d58c431f1f0aa42eaa5b3704cdf3205944559c3b94a3911cd319192801
+  sha256: c219da736112ba01f90605994a60aa77a954012b301bda310a24463f5f8bef30
 
 build:
   number: 0
   entry_points:
     - frictionless = frictionless.__main__:program
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
 
 requirements:
   host:
@@ -46,6 +47,9 @@ test:
     - frictionless
   commands:
     - frictionless --help
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://github.com/frictionlessdata/frictionless-py
