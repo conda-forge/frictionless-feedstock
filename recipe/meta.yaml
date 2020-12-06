@@ -1,5 +1,5 @@
 {% set name = "frictionless" %}
-{% set version = "3.43.0" %}
+{% set version = "3.44.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 796b4b017dfad470f87f22e046754ab8cf38da2cfacb85f8f85f2aec869f445b
+  sha256: 13d06da6e800de787c7a5b85bf05eca0d9da1af791514e1edda989eb830faf30
 
 build:
   number: 0
