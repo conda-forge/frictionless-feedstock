@@ -1,5 +1,5 @@
 {% set name = "frictionless" %}
-{% set version = "4.29.0" %}
+{% set version = "4.40.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f50a6a37c02b10bfefefaef85720c61382738bd9eef3ef920dd9c381b97a4af1
+  sha256: 324061d754525adfe8f6be56af12660a40966c0c4e01eccfc993dc82b9e9e623
 
 build:
   number: 0
@@ -32,11 +32,12 @@ requirements:
     - jsonschema >=2.5
     - simpleeval >=0.9.11
     - stringcase >=1.2
-    - typer[all] >=0.4.1
+    - typer[all] >=0.5
     - validators >=0.18
     - python-slugify >=1.2
     - python-dateutil >=2.8
-
+    - tabulate >=0.8.10
+    - jinja2 >=3.0.3
 
 test:
   imports:
