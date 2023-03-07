@@ -10,7 +10,7 @@ source:
   sha256: d1c722a133c4823c1f6af92d90e6d38c17b459fb6d6193e1502dd067f91e50cb
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - frictionless = frictionless.__main__:program
   script: {{ PYTHON }} -m pip install . --no-deps -vv
@@ -24,7 +24,7 @@ requirements:
     - python >=3.8
     - petl >=1.6
     - marko >=1.0
-    - attrs >=21.3
+    - attrs >=21.2.0
     - jinja2 >=3.0
     - pyyaml >=5.3
     - isodate >=0.6
