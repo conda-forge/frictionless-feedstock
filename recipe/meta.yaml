@@ -20,6 +20,7 @@ requirements:
   host:
     - python
     - pip
+    - hatchling
   run:
     - python >=3.8
     - petl >=1.6
