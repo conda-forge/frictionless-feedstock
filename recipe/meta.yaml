@@ -1,5 +1,5 @@
 {% set name = "frictionless" %}
-{% set version = "5.14.5" %}
+{% set version = "5.15.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a4840906068c643c04d6b543085e31b1309abc39888cd1fe80abb7025a833b88
+  sha256: 70a351f08e18031164e7745dfb8242d12fa5b9ed785c63927687dfe6b8949449
 
 build:
   number: 0
@@ -31,11 +31,11 @@ requirements:
     - isodate >=0.6
     - rfc3986 >=1.4
     - chardet >=3.0
-    - pydantic >=1.9
+    - pydantic >=2.0
     - requests >=2.10
     - humanize >=4.2
     - tabulate >=0.8.10
-    - jsonschema >=2.5
+    - jsonschema <4.18
     - simpleeval >=0.9.11
     - stringcase >=1.2
     - typer[all] >=0.5
