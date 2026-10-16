@@ -1,5 +1,5 @@
 {% set name = "frictionless" %}
-{% set version = "5.20.0" %}
+{% set version = "5.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d83aca7148fe146254ac00a8c9517407c8f4974afd12b09f06bdca0c407448bf
+  sha256: 4d9848570bc682943375824a4be7633e8bbdeff228affee763cab346e48000b4
 
 build:
   number: 0
